@@ -24,7 +24,7 @@ export default function HomePage({ cloth, idxs, showAlert, renderAlert }) {
                 return (
                     <Link
                         to={`/show/${card.id}`}
-                        className="col-6 col-md-3 mt-3"
+                        className="col-6 col-md-3 mt-3 bg-dark"
                         key={card.id}
                         style={{textDecoration: 'none', cursor: 'pointer'}}
                     >
@@ -48,7 +48,7 @@ export default function HomePage({ cloth, idxs, showAlert, renderAlert }) {
         };
 
     return (
-        <div>
+        <div classname= "bg-dark">
             {showAlert && renderAlert()}
             <HomeCarousel />
             <div className="container-fluid pt-4">

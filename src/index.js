@@ -5,6 +5,7 @@ import 'semantic-ui-css/semantic.min.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import { BrowserRouter as Router } from 'react-router-dom';
+import './assets/styles/style.css'
 
 import App from './components/App';
 

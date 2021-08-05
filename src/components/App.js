@@ -92,7 +92,7 @@ const App = () => {
             });
             setAlertObj({
                 variant: 'success',
-                message: 'Thanks for signing up. Welcome to FROS!'
+                message: 'Thanks for signing up. Welcome to FORNA FASHIONS!'
             })
             setShowAlert(true)
             routerProps.history.push('/');
@@ -139,7 +139,7 @@ const App = () => {
     }
 
     return (
-        <div className="container-fluid p-0 custom-height">
+        <div className="container-fluid p-0 bg-dark custom-height">
             <ScrollToTop />
             <MainNav onLogout={onLogout} auth={auth} />
             <div className="main-container">

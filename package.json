@@ -8,10 +8,11 @@
     "@testing-library/user-event": "^12.1.10",
     "axios": "^0.21.1",
     "bootstrap": "^5.0.0-beta3",
-    "cors": "^2.8.5",
     "font-awesome": "^4.7.0",
     "jquery": "^3.6.0",
     "js-cookie": "^2.2.1",
+    "mdbootstrap": "^4.20.0",
+    "mdbreact": "^5.1.0",
     "popper.js": "^1.16.1",
     "react": "^17.0.2",
     "react-bootstrap": "^1.5.2",
@@ -29,7 +30,6 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "proxy": "http://localhost:3001",
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -47,8 +47,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "http-proxy-middleware": "^0.19.1"
   }
 }

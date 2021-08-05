@@ -1,0 +1,12 @@
+.footer-class .page-footer {
+  background-color: black;
+  color: #c2c0c0;
+}
+
+a {
+  color: #c2c0c0;
+}
+
+a:hover {
+  color: white;
+}
