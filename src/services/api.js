@@ -5,8 +5,13 @@ const ALL_CLOTHS_URL = 'https://forna.herokuapp.com/api/v1/inventories';
 const CART_URL = 'https://forna.herokuapp.com/api/v1/carts';
 const ITEM_URL = 'https://forna.herokuapp.com/api/v1/items'
 
-const token =  localStorage.getItem('token');
-const config = { headers: { Authorization: `Bearer ${token}`, }, }; 
+const headers = () => {
+    return {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+        Authorization: token()
+    };
+};
 
 const getCloths = async () => {
     const res = await axios.get(ALL_CLOTHS_URL);
@@ -21,7 +26,7 @@ const getOneCloth = async (id) => {
 const signup = data => {
     return fetch(`${BACKEND_URL}/users`, {
         method: 'POST',
-        headers: config,
+        headers: headers(),
         body: JSON.stringify({
             user: data
         })
@@ -32,7 +37,7 @@ const signup = data => {
 const login = data => {
     return fetch(`${BACKEND_URL}/login`, {
         method: "POST",
-        headers: config,
+        headers: headers(),
         body: JSON.stringify(data)
     })
     .then(res => res.json())
@@ -40,7 +45,7 @@ const login = data => {
 
 const getCurrentUser = () => {
     return fetch(`${BACKEND_URL}/profile`, {
-        headers: config
+        headers: headers()
     })
     .then(res => res.json());
 };
