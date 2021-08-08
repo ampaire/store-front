@@ -3,7 +3,9 @@ import axios from 'axios';
 const BACKEND_URL = 'https://forna.herokuapp.com/api/v1/';
 const ALL_CLOTHS_URL = 'https://forna.herokuapp.com/api/v1/inventories';
 const CART_URL = 'https://forna.herokuapp.com/api/v1/carts';
-const ITEM_URL = 'https://forna.herokuapp.com/api/v1/items'
+const ITEM_URL = 'https://forna.herokuapp.com/api/v1/items';
+const token = () =>  localStorage.getItem('token');
+
 
 const headers = () => {
     return {

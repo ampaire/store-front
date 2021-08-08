@@ -15,8 +15,8 @@ const About = () => {
                         <footer className="blockquote-footer">Fortunate</footer>
                     </blockquote>
                 </Row>
-                <h1 className="text-center">About us</h1>
-                <div id="pars" className="mx-3 mx-md-4 mx-lg-5 text-left">
+                <h1 className="text-center text-white">About us</h1>
+                <div id="pars" className="mx-3 mx-md-4 mx-lg-5 text-white text-left">
                     <p className="mt-3 mt-md-4 mt-lg-5">FORNA FASHIONS is a clothing line located in ........, Uganda. It was founded in 2021, on the basis of adding 
                     creativity to African styles. It specializes in manufacturing African fashionable clothing and outfits. We believe there is great artistry in subdued simplicity, 
                     and strive to reflect that in all our product lines.</p>
