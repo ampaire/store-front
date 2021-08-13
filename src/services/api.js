@@ -26,7 +26,7 @@ const getOneCloth = async (id) => {
 };
 
 const signup = data => {
-    return fetch(`${BACKEND_URL}/users`, {
+    return fetch(`${BACKEND_URL}/signup`, {
         method: 'POST',
         headers: headers(),
         body: JSON.stringify({
